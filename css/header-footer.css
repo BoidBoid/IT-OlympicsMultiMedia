@@ -1,0 +1,21 @@
+#header{
+    height: 78px;
+    width: 100%;
+    background-color: #4E7535;
+    background: -webkit-linear-gradient(#14BA6F,#139E64 );
+    background: -o-linear-gradient(#14BA6F,#139E64 );
+    background: -moz-linear-gradient(#14BA6F,#139E64 );
+    background: linear-gradient(#14BA6F,#139E64 );
+    box-shadow: 0 3px 100px #000000;
+    position:fixed;
+}
+#logo-img{
+    height: 78px;
+}
+.header-btn{
+    margin-top: 24px;
+    overflow:hidden;
+}
+.header-btn-alt{
+    margin-top: 0;
+}
