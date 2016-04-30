@@ -8,6 +8,8 @@
     background: linear-gradient(#14BA6F,#139E64 );
     box-shadow: 0 3px 100px #000000;
     position:fixed;
+
+    z-index: 100000;
 }
 #logo-img{
     height: 78px;
@@ -15,6 +17,7 @@
 .header-btn{
     margin-top: 24px;
     overflow:hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.72);
 }
 .header-btn-alt{
     margin-top: 0;

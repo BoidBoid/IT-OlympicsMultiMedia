@@ -8,7 +8,7 @@ body{
 #body{
     padding-top:80px;
 }
-#body .container{
+#body-container{
     background-color: #159853;
     background: -webkit-linear-gradient(#159853,#148A48 );
     background: -o-linear-gradient(#159853,#148A48 );
@@ -23,4 +23,19 @@ h1.inset {
                     rgba(0,0,0,0.3) 0 -1px,
                     rgba(255,255,255,0.5) 0 1px,
                     rgba(0,0,0,0.3) -1px -2px;
+}
+.social-media{
+}
+
+.social-media-btn {
+    height: 64px;
+    width: 64px;
+    margin-top: 120%;
+}
+.jumbotron {
+    margin-top: 32px;
+    background-color: rgba(20, 112, 62, .5);
+}
+.jumbotron-alt{
+    background-color: rgba(14, 78, 42, 0.50);
 }
