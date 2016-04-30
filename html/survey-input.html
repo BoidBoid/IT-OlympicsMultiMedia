@@ -6,6 +6,8 @@
     <!--Scripts-->
     <!--JQuery-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <!-- Firebase -->
+    <script src="https://cdn.firebase.com/js/client/2.4.2/firebase.js"></script>
     <!--Bootstrap-->
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -13,8 +15,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-    <!--Recurring Styles-->
-    <!--Unique Styles-->
+    <!--Recurring Scripts-->
+    <!--Unique Scripts-->
+    <script src="../javascript/survey-input.js"></script>
 
     <!--Styles-->
     <!--Recurring Styles-->
@@ -27,10 +30,12 @@
 <div id="header">
     <div class="container">
         <div class="row">
-            <div class="col-lg-4 col-md-4 hidden-sm hidden-xs header-logo-container">
+            <a href="../html/index.html"><div class="col-lg-4 col-md-4 hidden-sm hidden-xs header-logo-container">
                 <img src="../media/hando.png" alt="logo" id="logo-img" class="header-logo"/>
                 <h1 class="header-logo inset"> DiT</h1>
+
             </div>
+            </a>
             <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12 col-lg-offset-4 col-md-offset-2 col-xs-offset-0 col-xs-offset-0" id="header-buttons">
                 <a href="../html/about.html"><button class="btn btn-default col-lg-3 col-md-3 col-sm-3 col-xs-3 header-btn">About</button></a>
                 <a href="../html/info.html"><button class="btn btn-default col-lg-3 col-md-3 col-sm-3  col-xs-3 header-btn">Info</button></a>
@@ -47,40 +52,40 @@
         </div>
         <div class="jumbotron jumbotron-alt text-center">
             <label for="gender">Gender:</label>
-            <div class="form-group" id="gender">
-                <select class="form-control">
-                    <option value="one">Male</option>
-                    <option value="two">Female</option>
-                    <option value="three">Undisclosed</option>
+            <div class="form-group">
+                <select class="form-control" id="gender" title="Gender">
+                    <option value="1">Male</option>
+                    <option value="2">Female</option>
+                    <option value="3">Undisclosed</option>
                 </select>
             </div>
             <label for="race">Race</label>
-            <div class="form-group" id="race">
-                <select class="form-control">
-                    <option value="one">White</option>
-                    <option value="two">Black/African American</option>
-                    <option value="three">American Indian</option>
-                    <option value="four">Asian</option>
-                    <option value="five">Hispanic/Latino</option>
-                    <option value="six">Other/Undisclosed</option>
+            <div class="form-group">
+                <select class="form-control"  id="race" title="Race">
+                    <option value="1">White</option>
+                    <option value="2">Black/African American</option>
+                    <option value="3">American Indian</option>
+                    <option value="4">Asian</option>
+                    <option value="5">Hispanic/Latino</option>
+                    <option value="6">Other/Undisclosed</option>
                 </select>
             </div>
             <label for="education">Years of STEM Education</label>
-            <div class="form-group" id="education">
-                <select class="form-control">
-                    <option value="two">Less than 1 year</option>
-                    <option value="four">Less than 3 years</option>
-                    <option value="five">More than 3 years</option>
+            <div class="form-group" >
+                <select class="form-control" id="education" title="Education">
+                    <option value="1">Less than 1 year</option>
+                    <option value="2">Less than 3 years</option>
+                    <option value="3">More than 3 years</option>
                 </select>
             </div>
             <label for="employment">Are you currently employed in a STEM position?</label>
-            <div class="form-group" id="employment">
-                <select class="form-control">
-                    <option value="one">Yes</option>
-                    <option value="two">No</option>
+            <div class="form-group">
+                <select class="form-control"  id="employment" title="Employment">
+                    <option value="1">Yes</option>
+                    <option value="2">No</option>
                 </select>
             </div>
-            <button class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" id="submit">Submit</button>
 
 
 
