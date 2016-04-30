@@ -1,9 +1,9 @@
 body{
-    background-color:#14BA6F;
-    background: -webkit-linear-gradient(#159853,#14BA6F );
+    background-color:#28413d;;
+    /*background: -webkit-linear-gradient(#159853,#14BA6F );
     background: -o-linear-gradient(#159853,#14BA6F );
     background: -moz-linear-gradient(#159853,#14BA6F );
-    background: linear-gradient(#159853,#14BA6F );
+    background: linear-gradient(#159853,#14BA6F );*/
 }
 #body{
     padding-top:80px;
@@ -35,7 +35,9 @@ h1.inset {
 .jumbotron {
     margin-top: 32px;
     background-color: rgba(20, 112, 62, .5);
+    overflow:hidden;
 }
 .jumbotron-alt{
     background-color: rgba(14, 78, 42, 0.50);
+    overflow: hidden;
 }
