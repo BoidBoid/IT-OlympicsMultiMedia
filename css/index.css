@@ -2,14 +2,3 @@
     height: 640px;
 }
 
-#footer{
-    background-color :rgba(0, 40, 9, 0.77);
-    color: white;
-    text-align: center;
-}
-#footer p{
-    font-size: 16px;
-    margin-bottom: 0px;
-    padding-bottom:5px;
-    padding-top:5px;
-}
